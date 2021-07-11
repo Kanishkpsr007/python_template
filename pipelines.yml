@@ -22,7 +22,7 @@ pipelines:
    configuration:
     runtime:
      type: image
-      image:
+     image:
        auto:
         language: go
         versions:
