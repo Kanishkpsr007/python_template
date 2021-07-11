@@ -5,8 +5,8 @@ resources:
  - name: gorepo
    type: GitRepo
    configuration:
-    gitProvider: py_template
-    path: kanishkpsr007/python_template
+    gitProvider: {{ .Values.gorepo.gitProvider }}
+    path: {{ .Values.gorepo.path }}
     branches:
      include: master
  - name: go_docker_image
@@ -19,15 +19,22 @@ resources:
 
 pipelines:
  - name: build_pipeline
+   configuration:
+    runtime:
+     type: image
+      image:
+       auto:
+        language: go
+        versions:
+         - 1.12
    steps:
     - name: docker_build
       type: Bash
       configuration:
-#        integrations:
-#         - name: test_docker_build
+       integrations:
+        - name: test_docker_build
        inputResources:
         - name: gorepo
-#           branch: master
        outputResources:
         - name: go_docker_image
       execution:
