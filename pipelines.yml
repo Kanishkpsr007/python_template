@@ -42,7 +42,7 @@ pipelines:
         - pwd
        onExecute:
         - |
-           if [ $res_gorepo_branchName -eq "master" ] && [ $res_gorepo_isPullRequest = false ]
+           if [ $res_gorepo_branchName -eq "master" ] && [ "$res_gorepo_isPullRequest" = false ]
            then 
             pushd $res_gorepo_resourcePath
             retry_command jfrog rt config --url $int_test_docker_build_url --user $int_test_docker_build_user --apikey $int_test_docker_build_apikey
