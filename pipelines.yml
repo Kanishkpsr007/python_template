@@ -17,7 +17,7 @@ resources:
     imageName: punchhdev.jfrog.io/jfrogdockerbuild/goimage
     imageTag: latest
 
-pipeline:
+pipelines:
  - name: build_pipeline
    steps:
     - name: docker_build
