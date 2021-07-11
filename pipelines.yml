@@ -19,14 +19,14 @@ resources:
 
 pipeline:
  - name: build_pipeline
-   configuration:
-    runtime:
-     type: image
-     image:
-       auto:
-        language: go
-        versions:
-         - 1.12
+#    configuration:
+#     runtime:
+#      type: image
+#      image:
+#        auto:
+#         language: go
+#         versions:
+#          - 1.12
    steps:
     - name: docker_build
       type: Bash
