@@ -5,8 +5,8 @@ resources:
  - name: gorepo
    type: GitRepo
    configuration:
-    gitProvider: {{ .Values.gorepo.gitProvider }}
-    path: {{ .Values.gorepo.path }}
+    gitProvider: py_template
+    path: kanishkpsr007/python_template
     branches:
      include: master
  - name: go_docker_image
