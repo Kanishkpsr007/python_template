@@ -27,7 +27,7 @@ pipelines:
 #         - name: test_docker_build
        inputResources:
         - name: gorepo
-          branch: master
+#           branch: master
        outputResources:
         - name: go_docker_image
       execution:
