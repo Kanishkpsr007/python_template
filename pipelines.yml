@@ -53,5 +53,5 @@ pipelines:
         - |
            if [[ $res_gorepo_branchName -eq "master" ]]
            then
-            #  shipctl put_resource_state_multi docker_image_event_webhook_service "versionName=$COMMIT sourceName=$DOCKER_ACC/$DOCKER_REPO buildNumber=$BUILD_NUMBER"
+            echo "Success"
            fi
