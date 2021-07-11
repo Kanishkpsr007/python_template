@@ -23,7 +23,7 @@ pipelines:
     - name: docker_build
       type: Bash
       configuration:
-       integration:
+       integrations:
         - name: test_docker_build
        inputResources:
         - name: gorepo
