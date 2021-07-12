@@ -59,7 +59,7 @@ pipelines:
       type: Bash
       configuration:
        inputSteps:
-        - docker_build
+        - name: docker_build
        inputResources:
         - name: gorepo
       execution:
