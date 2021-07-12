@@ -48,6 +48,7 @@ pipelines:
             retry_command jfrog rt config --url $int_test_docker_build_url --user $int_test_docker_build_user --apikey $int_test_docker_build_apikey
             docker build -t $res_go_docker_image_imageName:latest -f Dockerfile.yml .
             jfrog rt docker-push $res_go_docker_image_imageName:latest $res_go_docker_image_sourceRepository --build-name=my-build --build-number=$run_number
+            jfrog rt build-publish my-build $run_number
            fi 
        onSuccess:
         - |
