@@ -5,6 +5,7 @@ image:
  name: go_image
  imagename: goimage1
  imageTag: latest
-runtime: 1.12
+runtime: 
+ version: 1.12
 docker:
  filepath: Dockerfile.yml
