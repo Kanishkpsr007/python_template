@@ -2,7 +2,7 @@ github:
  name: my_repo1
  branch: test
 image:
- name: go_image1
+ name: go_image2
  imagename: goimage2
  imageTag: latest
 runtime: 
