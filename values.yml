@@ -1,3 +1,11 @@
-gorepo:
- gitProvider: py_template
- path: kanishkpsr007/python_template
+github:
+ name: my_repo1
+ branch: test
+image:
+ name: go_image1
+ imagename: goimage2
+ imageTag: latest
+runtime: 
+ version: 1.12
+docker:
+ filepath: Dockerfile.yml
