@@ -6,4 +6,4 @@ image:
  imageTag: latest
 runtime: 1.12
 docker:
- filepath: 
+ filepath: Dockerfile.yml
