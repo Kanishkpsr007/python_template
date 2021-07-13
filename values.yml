@@ -1,5 +1,6 @@
 github:
  name: my_repo
+ branch: master
 image:
  name: go_image
  imagename: goimage1
